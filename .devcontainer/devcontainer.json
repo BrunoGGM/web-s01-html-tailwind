@@ -2,13 +2,10 @@
   "name": "Sesión 1 - HTML Tailwind",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
 
-  // Solo dejamos Git LFS como feature (Node ya viene en la imagen)
   "features": {
     "ghcr.io/devcontainers/features/git-lfs:1": {}
   },
 
-  // Instala deps del proyecto; si falla ci, usa install
-  // (Opcional) agrega 'git lfs install' por si tu repo usa LFS
   "postCreateCommand": "git lfs install || true && (npm ci || npm install)",
 
   "customizations": {
@@ -17,17 +14,20 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "bradlc.vscode-tailwindcss",
-        "ritwickdey.LiveServer"
+        "ritwickdey.LiveServer",
+        "GulajavaMinistudio.mayukaithemevsc",
+        "PKief.material-icon-theme",
+        "aaron-bond.better-comments",
+        "usernamehw.errorlens",
+        "kamikillerto.vscode-colorize",
+        "GitHub.copilot"
       ],
       "settings": {
-        // Formato al guardar con Prettier
+        "workbench.colorTheme": "Mayukai Ayu",
+        "workbench.iconTheme": "material-icon-theme",
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-
-        // Correcciones ESLint al guardar
         "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
-
-        // Archivos que ESLint debe validar
         "eslint.validate": [
           "javascript",
           "javascriptreact",
@@ -36,14 +36,11 @@
           "vue",
           "html"
         ],
-
-        // Tailwind
         "tailwindCSS.includeLanguages": { "plaintext": "html" }
       }
     }
   },
 
-  // Puertos
   "forwardPorts": [5173, 3000],
   "portsAttributes": {
     "5173": { "label": "Vite/Preview", "onAutoForward": "notify" },
