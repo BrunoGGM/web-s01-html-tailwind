@@ -20,10 +20,13 @@
         "aaron-bond.better-comments",
         "usernamehw.errorlens",
         "kamikillerto.vscode-colorize",
-        "GitHub.copilot"
+        "GitHub.copilot",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "christian-kohler.npm-intellisense"
       ],
       "settings": {
-        "workbench.colorTheme": "Mayukai Ayu",
+        "workbench.colorTheme": "Mayukai Alucard",
         "workbench.iconTheme": "material-icon-theme",
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
