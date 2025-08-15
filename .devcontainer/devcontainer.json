@@ -1,0 +1,24 @@
+{
+  "name": "Sesión 1 - HTML Tailwind",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    }
+  },
+  "postCreateCommand": "npm ci || npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "ritwickdey.LiveServer"
+      ]
+    }
+  },
+  "forwardPorts": [5173, 3000],
+  "portsAttributes": {
+    "5173": { "label": "Vite/Preview", "onAutoForward": "notify" },
+    "3000": { "label": "Live Server", "onAutoForward": "notify" }
+  }
+}

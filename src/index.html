@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sesión 1 - HTML + CSS + Tailwind</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-800">
+  <header class="border-b bg-white">
+    <div class="mx-auto max-w-5xl px-4 py-4 flex items-center justify-between">
+      <h1 class="text-xl font-bold">Mini Curso Web — Sesión 1</h1>
+      <nav class="flex gap-4">
+        <a class="hover:text-blue-600" href="#hero">Inicio</a>
+        <a class="hover:text-blue-600" href="#cards">Contenido</a>
+        <a class="hover:text-blue-600" href="#footer">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+    <main>
+      <section id="hero" class="bg-gradient-to-br from-blue-50 to-blue-100">
+        <div class="mx-auto max-w-5xl px-4 py-20 text-center">
+          <h2 class="text-4xl font-extrabold mb-4">HTML + CSS + Tailwind</h2>
+          <p class="text-lg text-gray-600 mb-8">Repaso esencial y primeras utilidades en Tailwind para maquetar rápido.</p>
+          <a href="#cards" class="inline-block rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700 transition">
+            Ver contenidos
+          </a>
+        </div>
+      </section>
+
+      <section id="cards" class="mx-auto max-w-5xl px-4 py-16">
+        <h3 class="text-2xl font-bold mb-8">Secciones</h3>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="rounded-2xl bg-white p-6 shadow-sm border">
+            <h4 class="font-semibold mb-2">HTML Semántico</h4>
+            <p class="text-sm text-gray-600">Estructura base, etiquetas y accesibilidad.</p>
+          </article>
+          <article class="rounded-2xl bg-white p-6 shadow-sm border">
+            <h4 class="font-semibold mb-2">CSS y Layout</h4>
+            <p class="text-sm text-gray-600">Box model, Flexbox y Grid para componer páginas.</p>
+          </article>
+          <article class="rounded-2xl bg-white p-6 shadow-sm border">
+            <h4 class="font-semibold mb-2">Tailwind CSS</h4>
+            <p class="text-sm text-gray-600">Clases utilitarias, responsive y buenas prácticas.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="mt-16 border-t bg-white">
+      <div class="mx-auto max-w-5xl px-4 py-8 text-sm text-gray-500">
+        Hecho en la Sesión 1 — Mini Curso Web.
+      </div>
+    </footer>
+</body>
+</html>
