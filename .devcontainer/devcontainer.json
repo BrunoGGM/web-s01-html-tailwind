@@ -1,21 +1,49 @@
 {
   "name": "Sesión 1 - HTML Tailwind",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+
+  // Solo dejamos Git LFS como feature (Node ya viene en la imagen)
   "features": {
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "22"
-    }
+    "ghcr.io/devcontainers/features/git-lfs:1": {}
   },
-  "postCreateCommand": "npm ci || npm install",
+
+  // Instala deps del proyecto; si falla ci, usa install
+  // (Opcional) agrega 'git lfs install' por si tu repo usa LFS
+  "postCreateCommand": "git lfs install || true && (npm ci || npm install)",
+
   "customizations": {
     "vscode": {
       "extensions": [
+        "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "bradlc.vscode-tailwindcss",
         "ritwickdey.LiveServer"
-      ]
+      ],
+      "settings": {
+        // Formato al guardar con Prettier
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+        // Correcciones ESLint al guardar
+        "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+
+        // Archivos que ESLint debe validar
+        "eslint.validate": [
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact",
+          "vue",
+          "html"
+        ],
+
+        // Tailwind
+        "tailwindCSS.includeLanguages": { "plaintext": "html" }
+      }
     }
   },
+
+  // Puertos
   "forwardPorts": [5173, 3000],
   "portsAttributes": {
     "5173": { "label": "Vite/Preview", "onAutoForward": "notify" },
