@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-        "lint": "eslint . --ext .js,.cjs,.mjs,.ts,.vue,.jsx,.tsx",
+    "lint": "eslint . --ext .js,.cjs,.mjs,.ts,.vue,.jsx,.tsx",
     "lint:fix": "npm run lint -- --fix",
     "format": "prettier . --write",
-     "dev:css": "tailwindcss -i ./src/main.css -o ./src/styles.css --watch",
+    "dev:css": "tailwindcss -i ./src/main.css -o ./src/styles.css --watch",
     "serve": "live-server src --port=3000 --no-browser --wait=200",
     "start": "npm-run-all -p dev:css serve",
     "build": "rm -rf dist && mkdir -p dist && cp -r src/* dist/ && tailwindcss -i ./src/main.css -o ./dist/styles.css --minify"
