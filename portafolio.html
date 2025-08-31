@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO - Camilo Mora - Product Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        font-family: "Quattrocento", serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Quattrocento Sans", sans-serif;
+      }
+
+      .nav {
+        width: auto;
+        background-color: #cee4e4;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 4rem 2rem 4rem;
+      }
+
+      .nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      .nav .title {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: rgb(46, 46, 46);
+      }
+
+      button {
+        background-color: #000000;
+        color: #cee4e4;
+        border: 2px solid rgb(255, 255, 255);
+        padding: 1rem 2rem 1rem 2rem;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #1b1b1b;
+        color: #ffffff;
+        border: 2px solid rgb(0, 0, 0);
+      }
+
+      .hero {
+        background-color: #169696;
+        background-image: url("https://plus.unsplash.com/premium_photo-1756224672428-905c9d7c10e7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+      }
+
+      .about-me {
+        background-color: #1a1a1a;
+        padding: 2rem 4rem 2rem 4rem;
+        display: flex;
+        color: #ffffff;
+      }
+
+      .about-me-1 {
+        display: flex;
+        flex-basis: 50%;
+      }
+
+      .about-me-2 {
+        display: flex;
+        flex-basis: 50%;
+      }
+      .card {
+        border: 1px solid #000000;
+        border-radius: 8px;
+        padding: 1rem 2rem 1rem 2rem;
+        margin: 1rem 0rem 1rem 0rem;
+        flex: 1;
+      }
+
+      .portfolio {
+        padding: 2rem 4rem 2rem 4rem;
+      }
+
+      .portfolio-cards {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .footer {
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+        padding: 1rem 0rem 1rem 0rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="title">Portafolio</div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <header class="hero">
+      <h1>Bienvenido a mi portafolio</h1>
+      <h4>Camilo Mora - Product designer</h4>
+      <button>Contactar</button>
+    </header>
+    <main>
+      <section class="about-me">
+        <div class="about-me-1">
+          <h2>Sobre mí</h2>
+        </div>
+        <div class="about-me-2">
+          <p>
+            Hola, soy Camilo Mora, un diseñador de productos con experiencia en
+            la creación de soluciones innovadoras y centradas en el usuario. Me
+            apasiona transformar ideas en productos funcionales y atractivos.
+          </p>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <h2>Proyectos</h2>
+        <div class="portfolio-cards">
+          <div class="card">
+            <h3>Proyecto 1: Aplicación de Tareas</h3>
+            <p>
+              Una aplicación móvil para gestionar tareas diarias con una
+              interfaz intuitiva y funcionalidades de recordatorio.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Proyecto 2: Plataforma de E-commerce</h3>
+            <p>
+              Diseño de una plataforma de comercio electrónico con enfoque en la
+              experiencia del usuario y la facilidad de navegación.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Proyecto 3: Rediseño de Sitio Web</h3>
+            <p>
+              Rediseño completo de un sitio web corporativo para mejorar la
+              usabilidad y la estética visual.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Contacto: miemail@example.com</p>
+    </footer>
+  </body>
+</html>
